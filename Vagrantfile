@@ -2,8 +2,8 @@
 #GitHub: https://github.com/mathfirewall
 
 machines = {
-  "master" => {"memory" => "1024", "cpu" => "2", "ip" => "100", "image" => "bento/ubuntu-22.04"},
-  "node01" => {"memory" => "1024", "cpu" => "2", "ip" => "101", "image" => "bento/ubuntu-22.04"}
+  "master" => {"memory" => "1024", "cpu" => "2", "ip" => "100", "image" => " ubuntu:lunar-20221216"},
+  "node01" => {"memory" => "1024", "cpu" => "2", "ip" => "101", "image" => " ubuntu:lunar-20221216"}
 }
 
 Vagrant.configure("2") do |config|
