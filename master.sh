@@ -15,7 +15,7 @@ cd /var/lib/docker/volumes/app/_data
 sudo docker volume create data
 
 sudo docker run -e MYSQL_ROOT_PASSWORD=Senha123 -e MYSQL_DATABASE=meubanco --name mysql_server -d -p 3306:3306 --mount type=volume,src=data,dst=/var/lib/mysql mysql:5.7
-sudo docker service create --name app_web --replicas 15 -dt -p 80:80 --mount type=volume,src=app,dst=/app/ webdevops/php-apache:alpine-php7
+sudo docker service create --name app_web --replicas 15 -dt -p 80:80 --mount type=volume,src=app,dst=/app/ php:7.4-apache
 
 sudo apt install nfs-server -y
 
